@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/image.jpg");
+}
+
+.cd {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 200px;
+    top: 30%;
+    left: 40%;
+    border: 10px solid rgba(0, 0, 0, 0);
+
+    border-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+
+    border-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+
+    border-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+
+    box-shadow: 0 0 0 4px rgba(247, 247, 247, 0.53), 0 0 0 200px rgba(255, 0, 0, 0.49), 0 0 0 204px rgba(247, 247, 247, 0.67), 0 0 0 60px rgba(27, 27, 27, 0.79) inset, 0 0 10px 60px rgba(0, 0, 0, 0.73) inset;
+
+    -webkit-animation:rotate 15s infinite linear;
+
+}
+
+.cd::after {
+    content: "prowered by Gdreamer";
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 20%;
+    top: 130%;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    color: rgba(255, 255, 255, 0.81);
+    text-shadow: 0 0 15px #000;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.cd::before {
+
+    content: "My CD";
+
+    width: 500px;
+
+    position: absolute;
+    top: -110px;
+    left: 50%;
+
+    margin-left: -250px;
+
+    color: #FFF;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    font-family: "Times New Roman", serif;
+
+    text-shadow: 0 0 40px #000, 0 -1px 0 #F3F3F3, 0 -2px 0 #F3F3F3;
+}
+.play {
+        position: fixed;
+        left: 47%;
+        top: 44%;
+    }
+
